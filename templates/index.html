@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DATA MINING - sarra Garbouj</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-design-iconic-font/css/material-design-iconic-font.css')}}">
+
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='vendor/date-picker/css/datepicker.min.css')}}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h4></h4>
+                <section>
+                    <h3>Insert Data</h3>
+                	<div class="form-row">
+                        <div class="form-holder">
+                
+                            <input id="name1" type="text" class="form-control" placeholder="Product Name">
+                        </div>
+                        <div class="form-holder">
+                
+                            <input id="rating1" type="text" class="form-control" placeholder="rating">
+                        </div>
+                	</div>
+                    <div class="form-row">
+                        <div class="form-holder">
+        
+                            <input id="review1" type="text" class="form-control" placeholder="review">
+                        </div>
+                        <div class="form-holder">
+                            <input id="brand1" type="text" class="form-control" placeholder="brand">
+                        </div>
+                    </div>
+                   
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input id="area1" type="text" class="form-control" placeholder="area">
+                        </div>
+                        <div class="form-holder">
+                            <a id="neuralNetwork" style="border: none;
+                            display: inline-flex;
+                            height: 42px;
+                            width: 132px;
+                            align-items: center;
+                            color: #fff;
+                            cursor: pointer;
+                            background: #8eb852;
+                            text-transform: uppercase;
+                            justify-content: center;
+                            letter-spacing: 1px;
+                            font-size: 15px;
+                            border-radius: 3px;">Submit</a>
+                        </div>
+                        
+                    </div>
+                    <div class="cart_totals">
+                        <table cellspacing="0" class="shop_table shop_table_responsive">
+                            <tr class="cart-subtotal">
+                                <th>Class</th>
+                                <td data-title="Subtotal">
+                                    <span class="woocommerce-Price-amount amount">
+                                        MLPClassifier
+                                    </span>
+                                </td>
+                                
+                            </tr>
+                            
+                            <tr class="cart-subtotal">
+                                <th>Prediction </th>
+                                <td data-title="Subtotal">
+                                    <span id="predict1" class="woocommerce-Price-amount amount">
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="order-total border-0">
+                                <th>Score</th>
+                                <td data-title="Total">
+                                    <span id="score1" class="woocommerce-Price-amount amount">
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                    <h3>Insert Data</h3>
+                	<div class="form-row">
+                        <div class="form-holder">
+                
+                            <input id="name2" type="text" class="form-control" placeholder="Product Name">
+                        </div>
+                        <div class="form-holder">
+                
+                            <input id="rating2" type="text" class="form-control" placeholder="rating">
+                        </div>
+                	</div>
+                    <div class="form-row">
+                        <div class="form-holder">
+        
+                            <input id="review2" type="text" class="form-control" placeholder="review">
+                        </div>
+                        <div class="form-holder">
+                            <input id="brand2" type="text" class="form-control" placeholder="brand">
+                        </div>
+                    </div>
+                   
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input id="area2" type="text" class="form-control" placeholder="area">
+                        </div>
+                        <div class="form-holder">
+                            <a id="nearstNeighbors" style="border: none;
+                            display: inline-flex;
+                            height: 42px;
+                            width: 132px;
+                            align-items: center;
+                            color: #fff;
+                            cursor: pointer;
+                            background: #8eb852;
+                            text-transform: uppercase;
+                            justify-content: center;
+                            letter-spacing: 1px;
+                            font-size: 15px;
+                            border-radius: 3px;">Submit</a>
+                        </div>
+                        
+                    </div>
+                    <div class="cart_totals">
+                        <table cellspacing="0" class="shop_table shop_table_responsive">
+                            <tr class="cart-subtotal">
+                                <th>Class</th>
+                                <td data-title="Subtotal">
+                                    <span class="woocommerce-Price-amount amount">
+                                        KNeighborsClassifier
+                                    </span>
+                                </td>
+                                
+                            </tr>
+                            
+                            <tr class="cart-subtotal">
+                                <th>Prediction </th>
+                                <td data-title="Subtotal">
+                                    <span id="predict2" class="woocommerce-Price-amount amount">
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="order-total border-0">
+                                <th>Score</th>
+                                <td data-title="Total">
+                                    <span id="score2" class="woocommerce-Price-amount amount">
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h4></h4>
+                <section>
+                    <h3>Insert Data</h3>
+                	<div class="form-row">
+                        <div class="form-holder">
+                
+                            <input id="name3" type="text" class="form-control" placeholder="Product Name">
+                        </div>
+                        <div class="form-holder">
+                
+                            <input id="rating3" type="text" class="form-control" placeholder="rating">
+                        </div>
+                	</div>
+                    <div class="form-row">
+                        <div class="form-holder">
+        
+                            <input id="review3" type="text" class="form-control" placeholder="review">
+                        </div>
+                        <div class="form-holder">
+                            <input id="brand3" type="text" class="form-control" placeholder="brand">
+                        </div>
+                    </div>
+                   
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input id="area3" type="text" class="form-control" placeholder="area">
+                        </div>
+                        <div class="form-holder">
+                            <a id="naiveBayes" style="border: none;
+                            display: inline-flex;
+                            height: 42px;
+                            width: 132px;
+                            align-items: center;
+                            color: #fff;
+                            cursor: pointer;
+                            background: #8eb852;
+                            text-transform: uppercase;
+                            justify-content: center;
+                            letter-spacing: 1px;
+                            font-size: 15px;
+                            border-radius: 3px;">Submit</a>
+                        </div>
+                        
+                    </div>
+                    <div class="cart_totals">
+                        <table cellspacing="0" class="shop_table shop_table_responsive">
+                            <tr class="cart-subtotal">
+                                <th>Class</th>
+                                <td data-title="Subtotal">
+                                    <span class="woocommerce-Price-amount amount">
+                                        GaussianNB
+                                    </span>
+                                </td>
+                                
+                            </tr>
+                            
+                            <tr class="cart-subtotal">
+                                <th>Prediction </th>
+                                <td data-title="Subtotal">
+                                    <span id="predict3" class="woocommerce-Price-amount amount">
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="order-total border-0">
+                                <th>Score</th>
+                                <td data-title="Total">
+                                    <span id="score3" class="woocommerce-Price-amount amount">
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- SECTION 4 -->
+                <h4></h4>
+                <section>
+                    <h4> What this project do !</h4>
+                    <br/>
+                    <div class="col">
+                        <span>The purpose of this project predict the price of product based on his rate, reviews, brand and area target. </span>
+                    </div>
+                    <br/>
+                    <h4> Algorithms used in this work !</h4>
+                    <br/>
+                    <div class="col">
+                        <h5>Neural Network :</h5>
+                        <span>A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature.</span>
+                    </div>
+                    <br/>
+                    <div class="col">
+                        <h5>Naive Bayes :</h5>
+                        <span>The Naive Bayes classification algorithm is a probabilistic classifier. It is based on probability models that incorporate strong independence assumptions. The independence assumptions often do not have an impact on reality. Therefore they are considered as naive.</span>
+                    </div>
+                    <br/>
+                    <div class="col">
+                        <h5>K nearest neighbors :</h5>
+                        <span>KNN works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression).</span>
+                    </div>
+                </section>
+                
+            </form>
+		</div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js')}}"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="{{ url_for('static',filename='js/jquery.steps.js')}}"></script>
+
+		<script src="{{ url_for('static',filename='js/main.js')}}"></script>
+
+    
+
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
